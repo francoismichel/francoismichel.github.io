@@ -1,0 +1,396 @@
+@import url(//fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300);
+
+@background-green: #379e5e;
+@link-yellow: #e8d34f;
+@link-hover-yellow: lighten(@link-yellow, 15%);
+@background-black: #333333;
+@border-black: #222222;
+.green()
+{
+    background-color: @background-green;
+    color: white;
+    a
+    {
+        color: @link-yellow;
+        &:hover, &:focus
+        {
+            color: @link-hover-yellow;
+        }
+    }
+
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    h1, h3
+    {
+        color: white;
+    }
+}
+
+body {
+  background-color: #f2f2f2;
+    font-family: "Lato", "sans-serif";
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+    padding-top: 50px;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+.navbar-default
+{
+    background-color: @background-black;
+    border-color: @border-black;
+    color: white;
+
+    .navbar-brand
+    {
+        color: white !important;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        font-weight: 300;
+        font-size: 25px;
+        padding-left: 60px;
+        position: relative;
+
+        img
+        {
+            height: 45px;
+            margin-top: -12px;
+            vertical-align: top;
+            display: inline;
+            position: absolute;
+            left: 10px;
+        }
+    }
+
+    .navbar-nav
+    {
+        .active a, .active a:hover, .active a:focus
+        {
+            background-color: #272727;
+            color: white;
+        }
+
+        li a
+        {
+            color: white;
+
+            &:hover
+            {
+                background-color: #272727;
+                color: white;
+            }
+        }
+    }
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", "sans-serif";
+    font-weight: 300;
+    color: #333;
+}
+
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* Links */
+a {
+    color: #3bc492;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #c0392b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+
+#headerwrap {
+    .green();
+	padding-top: 60px;
+    padding-bottom: 0;
+}
+
+#headerwrap h1 {
+	margin-top: 30px;
+	color: white;
+	font-size: 70px;
+	
+}
+
+#headerwrap h3 {
+	color: white;
+	font-size: 30px;
+}
+
+#headerwrap h5 {
+	color: white;
+	font-weight: 700;
+	text-align: left;
+}
+
+#headerwrap p {
+	text-align: left;
+	color: white
+}
+
+/* intro Wrap */
+
+#intro {
+	padding-top: 50px;
+	border-top: #bdc3c7 solid 5px;
+}
+
+#features {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#features .ac a{
+	font-size: 20px;
+}
+
+/* Technology Wrap */
+#technologywrap
+{
+    .green();
+
+    h3
+    {
+        color: white;
+        font-size: 30px;
+    }
+
+    color: white;
+
+    .accordion
+    {
+        a.accordion-toggle
+        {
+            font-size: 20px;
+            &:before
+            {
+                display: inline-block;
+                font: normal normal normal 14px/1 FontAwesome;
+                font-size: inherit;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                transform: translate(0, 0);
+                content: "\f078";
+                width: 1.28571429em;
+                text-align: center;
+            }
+
+            &.collapsed:before
+            {
+                content: "\f054";
+            }
+        }
+    }
+
+    #accordion_tech_img
+    {
+        div > img
+        {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            max-height: 300px;
+            margin: auto;
+        }
+    }
+}
+
+#featurewrap
+{
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    #feature_icon
+    {
+        font-size: 250px;
+        text-align: center;
+        display: block;
+        margin: auto;
+        color: @background-green;
+        padding: 20px;
+        padding-top: 60px;
+    }
+}
+
+/* Technology Wrap */
+#usagewrap
+{
+    .green();
+}
+
+#testwrap
+{
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 0;
+
+    a.btn-manageacloud
+    {
+        font-size: 30px;
+        display: block;
+        margin-top: 300px;
+
+        &.single
+        {
+            margin-top: 0;
+        }
+    }
+
+    .btn-success
+    {
+        color: #ffffff;
+        background-color: @background-green;
+        border-color: darken(@background-green, 5%);
+
+        &:hover, &:focus
+        {
+            background-color: darken(@background-green, 10%);
+            border-color: darken(@background-green, 15%);
+        }
+    }
+
+    iframe
+    {
+        width: 100%;
+        border: 1px solid #aaaaaa;
+        min-height: 700px;
+    }
+}
+
+#downloadwrap
+{
+    .green();
+
+    .btn.btn-primary
+    {
+        background-color: @link-yellow;
+        color: @background-black;
+        border-color: @link-hover-yellow;
+
+        &:hover
+        {
+            background-color: @link-hover-yellow;
+            color: lighten(@background-black, 10%);
+        }
+    }
+}
+
+/* Showcase Wrap */
+
+#showcase {
+	display: block;
+	background-color: #34495e;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#showcase h1 {
+	color: white;
+}
+
+#footerwrap {
+	background-color: #2f2f2f;
+	color: white;
+	padding-top: 40px;
+	padding-bottom: 60px;
+	text-align: left;
+}
+
+#footerwrap h3 {
+	font-size: 28px;
+	color: white;
+}
+
+#footerwrap p {
+	color: white;
+	font-size: 18px;
+}
+
+/* Copyright Wrap */
+
+#c {
+	background: @background-black;
+	padding: 15px 0;
+
+    p
+    {
+        color: white;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+/* Intro logos */
+.intro-logo
+{
+    font-size: 160px;
+    color: #379e5e;
+}
+
+.accordion-group.panel
+{
+    margin-bottom: inherit;
+    background-color: inherit;
+    border: inherit;
+    border-radius: inherit;
+    -webkit-box-shadow: inherit;
+    box-shadow: inherit;
+}
+
+/* Code */
+pre
+{
+    background-color: @background-black;
+    color: white;
+    font-family: monospace;
+}
